@@ -28,3 +28,8 @@ async def root():
 # function
 # decorate
 
+
+# get,post,put,delete--> path operator 
+# ('/path')--> this is called the path --> path
+# app,myapp,anyother_instance_name--> path operation decorator
+# funcion --> its called the path operation function
