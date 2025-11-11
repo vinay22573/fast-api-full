@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional 
 from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
@@ -44,7 +44,8 @@ async def show_Nth_Blog(limit:int = 10, published:bool = True, sort:Optional[str
     else:
         return {"data":f'{limit} blogs from the db'}
     
-@app.get('/blog/{id}')
+# Here in the given below examplethe id is path parameter and limit is query parameter why because id is present in path whereas limit is only present in function arguments
+@app.get('/blog/{id}/comments')
 async def comments(id:int=10, limit:int = 10,):
     return {"data":f'{limit} comments for blog {id}'}
 # since we have not given any value for id why does it not gives an error

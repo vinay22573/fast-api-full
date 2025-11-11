@@ -1,3 +1,4 @@
 __pycache__
-fast-api-env/
-.DS_store
+fstapiEnv/
+blog_crud/env/
+.DS_Store

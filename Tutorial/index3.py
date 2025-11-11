@@ -7,6 +7,8 @@ app = FastAPI()
 async def showBlogList():
     return {"data":"list_of_blogs"}
 
+# Learnig Non-Dynamic routes should be kept above Dynamic Routes
+
 # @app.get("/blog/{id}")
 # async def show_Nth_Blog(id:int):
 #         # fetch blog with id = id
